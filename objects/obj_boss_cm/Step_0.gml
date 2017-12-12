@@ -1,3 +1,5 @@
 if(global.start = 1) {
-scr_boss_cm_waves();
+	if(instance_exists(obj_player)) {
+	scr_boss_cm_waves();
+	}
 }

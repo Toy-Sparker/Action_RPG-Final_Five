@@ -8,6 +8,7 @@ string_load = scr_boss_cm_intro_strings;
 
 strings[0]="";
 txt_spd[0]=0;
+speaker[0]="";
 
 l = 0;
 next = 0;

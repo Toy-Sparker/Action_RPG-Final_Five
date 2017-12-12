@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "rm_boss_cm",
     "id": "acffa702-8004-400a-9705-3f6c278b9b32",
     "creationCodeFile": "",
     "inheritCode": false,

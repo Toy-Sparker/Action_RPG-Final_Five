@@ -1,7 +1,18 @@
+//Stats
 atk = 1;
 hp = 10;
+
+//Wave & Wavetime
 wave = 0;
 t = 0;
+
+//Set image speed to 0
+image_speed = 0;
+
+//Setting image numbers as variables for more conventional uses
+expr_normal = 0;
+expr_con = 1;
+expr_ang = 2;
 
 ///Projectiles
 //Bullet1's Properties
