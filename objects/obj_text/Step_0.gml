@@ -1,4 +1,4 @@
- script_execute(string_load);
+script_execute(string_load);
 
 print = string_copy(str,1,l);
 str = strings[next];

@@ -9,6 +9,8 @@ soundtrack = mus_miscalculation;
 lay_id = layer_get_id("Background");
 bg_id = layer_background_get_id(lay_id);
 
+boss = obj_boss_cm;
+
 dark = c_gray;
 light = c_white;
 

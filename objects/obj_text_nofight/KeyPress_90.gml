@@ -1,4 +1,4 @@
-if(next > next_max) {
+if(next = next_max) {
 talking = 0;
 } else {
 next++;

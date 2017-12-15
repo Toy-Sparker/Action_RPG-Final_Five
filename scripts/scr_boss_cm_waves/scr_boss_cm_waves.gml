@@ -230,13 +230,12 @@ if(wave = 6) {
 #region Wave 7 - Break to Dialogue 1
 if(wave = 7) {
 	if(global.fighting = 1) {
-	obj_text.alarm[10]=1;
-	global.fighting = 0;
+	obj_control.alarm[10]=1;
 	obj_text.next = 0;
 	obj_text.string_load = scr_boss_cm_1_strings;
-	with(obj_homingbomb0) {
-	instance_destroy();
-	}
+		with(obj_homingbomb0) {
+		instance_destroy();
+		}
 	}
 }
 #endregion
@@ -348,7 +347,7 @@ if(wave = 11) {
 	t++;
 			//Wave 11 - Assault 1
 			if(alarm[0] <= 0) {
-			alarm[0] = 12;
+			alarm[0] = 15;
 				dir1 = 90 - 45;
 				dir2 = 270 - 45;
 				dir3 = point_direction(x,y,obj_player.x,obj_player.y);
@@ -356,28 +355,23 @@ if(wave = 11) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
-				speed = 6;
+				speed = 2;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
-				speed = 6;
+				speed = 2;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
-				speed = 7;
+				speed = 10;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
-				speed = 7;
+				speed = 20;
 				}
-		}
-		if(alarm[1] <= 0) {
-		alarm[1] = 60;
-			with(instance_create_layer(0,0,"Projectiles",homing1)) {
-			}
 		}
 	if(t >= 60 * 10) {
 	wave++;
@@ -438,7 +432,7 @@ if(wave = 13) {
 				}
 		}
 		if(alarm[1] <= 0) {
-		alarm[1] = 30;
+		alarm[1] = 45;
 			with(instance_create_layer(0,0,"Projectiles",homing1)) {
 			}
 		}
@@ -452,13 +446,12 @@ if(wave = 13) {
 #region Wave 14 - Break to Dialogue 2
 if(wave = 14) {
 	if(global.fighting = 1) {
-	obj_text.alarm[10]=1;
-	global.fighting = 0;
+	obj_control.alarm[10]=1;
 	obj_text.next = 0;
 	obj_text.string_load = scr_boss_cm_2_strings;
-	with(obj_homingbomb0) {
-	instance_destroy();
-	}
+		with(obj_homingbomb0) {
+		instance_destroy();
+		}
 	}
 }
 #endregion

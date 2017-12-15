@@ -1,4 +1,4 @@
 //Skip Dialogue
-if(global.start = 0) {
+if(instance_exists(obj_text)) && (global.start = 0) {
 alarm[11]=1;
 }
