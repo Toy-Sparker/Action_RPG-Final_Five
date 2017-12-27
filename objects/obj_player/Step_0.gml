@@ -11,3 +11,6 @@ scr_player_death();
 
 if(global.fighting = 1) state = "Move & Attack";
 if(global.fighting = 0) state = "No Move";
+
+//Set Target
+target = obj_control.boss;

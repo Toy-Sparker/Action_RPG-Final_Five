@@ -1,6 +1,7 @@
 //Stats
-atk = 1;
+atk = 1.5;
 hp = 10;
+guard = 10;
 
 //Wave & Wavetime
 wave = 0;
@@ -15,6 +16,9 @@ expr_con = 1;
 expr_ang = 2;
 
 ///Projectiles
+//Set Target & owner
+target = obj_player;
+
 //Bullet1's Properties
 bullet1 = obj_arrow1;
 xx1 = x;

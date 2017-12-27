@@ -10,7 +10,7 @@
         "cb560cd4-cc9b-498b-a02f-5ece6cb9990d"
     ],
     "filterType": "GMSprite",
-    "folderName": "cmboss",
+    "folderName": "Boss - Code Manipulator",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

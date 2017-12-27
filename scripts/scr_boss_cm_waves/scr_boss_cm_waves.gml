@@ -9,15 +9,18 @@ if(wave = 0) {
 			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 			image_angle = other.dir1;	
 			direction = other.dir1;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 			image_angle = other.dir2;
 			direction = other.dir2;
+			owner = obj_boss_cm;
 			}
 		}
 		if(alarm[1] <= 0) {
 		alarm[1] = 45;
 			with(instance_create_layer(0,0,"Projectiles",homing1)) {
+			owner = obj_boss_cm;
 			}
 		}
 	dir1 = dir1 + 2.8;
@@ -38,18 +41,22 @@ if(wave = 1) {
 			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 			image_angle = other.dir1;	
 			direction = other.dir1;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 			image_angle = other.dir2;
 			direction = other.dir2;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 			image_angle = other.dir3;	
 			direction = other.dir3;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 			image_angle = other.dir4;
 			direction = other.dir4;
+			owner = obj_boss_cm;
 			}
 		}
 	dir1 = dir1 + 3.4;
@@ -74,18 +81,22 @@ if(wave = 2) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 	dir1 = dir1 + 5;
@@ -112,18 +123,22 @@ if(wave = 3) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 	if(t >= 60 * 1) {
@@ -146,18 +161,22 @@ if(wave = 4) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 	if(t >= 60 * 1) {
@@ -176,16 +195,19 @@ if(wave = 5) {
 			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 			image_angle = other.dir1;	
 			direction = other.dir1;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 			image_angle = other.dir2;
 			direction = other.dir2;
+			owner = obj_boss_cm;
 			}
 		}
 		//Wave 5 - Assault 2
 		if(alarm[1] <= 0) {
 		alarm[1] = 30;
 			with(instance_create_layer(0,0,"Projectiles",homing1)) {
+			owner = obj_boss_cm;
 			}
 		}
 	dir1 = dir1 + 2.5;
@@ -206,16 +228,19 @@ if(wave = 6) {
 			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 			image_angle = other.dir1;	
 			direction = other.dir1;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 			image_angle = other.dir2;
 			direction = other.dir2;
+			owner = obj_boss_cm;
 			}
 		}
 		//Wave 6 - Assault 2
 		if(alarm[1] <= 0) {
 		alarm[1] = 20;
 			with(instance_create_layer(0,0,"Projectiles",homing1)) {
+			owner = obj_boss_cm;
 			}
 		}
 	dir1 = dir1 - 2.5;
@@ -253,18 +278,22 @@ if(wave = 8) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 	if(t >= 60 * 2) {
@@ -287,18 +316,22 @@ if(wave = 9) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 	if(t >= 60 * 1) {
@@ -321,18 +354,22 @@ if(wave = 10) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 	if(t >= 60 * 1) {
@@ -356,21 +393,25 @@ if(wave = 11) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
 				speed = 2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
 				speed = 2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
 				speed = 10;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
 				speed = 20;
+				owner = obj_boss_cm;
 				}
 		}
 	if(t >= 60 * 10) {
@@ -389,10 +430,12 @@ if(wave = 12) {
 			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 			image_angle = other.dir1;	
 			direction = other.dir1;
+			owner = obj_boss_cm;
 			}
 			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 			image_angle = other.dir2;
 			direction = other.dir2;
+			owner = obj_boss_cm;
 			}
 		}
 	dir1 = dir1 + 5;
@@ -417,23 +460,28 @@ if(wave = 13) {
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 				image_angle = other.dir2;
 				direction = other.dir2;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
 				image_angle = other.dir3;	
 				direction = other.dir3;
+				owner = obj_boss_cm;
 				}
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
+				owner = obj_boss_cm;
 				}
 		}
 		if(alarm[1] <= 0) {
 		alarm[1] = 45;
 			with(instance_create_layer(0,0,"Projectiles",homing1)) {
+			owner = obj_boss_cm;
 			}
 		}
 	if(t >= 60 * 4) {
@@ -456,8 +504,61 @@ if(wave = 14) {
 }
 #endregion
 
-#region Wave 15 - End of demo
+#region Wave 15 
 if(wave = 15) {
-	room_goto(rm_enddemo);
+	t++;
+		//Wave 15 - Assault 1
+		if(alarm[0] <= 0) {
+		alarm[0] = 6;
+			dir1 += 11.25;
+			dir2 += 11.25;
+			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
+			owner = obj_boss_cm;
+			image_angle = other.dir1;	
+			direction = other.dir1;
+			speed = 6;
+			image_xscale = 1.5;
+			image_yscale = 1.25;
+			event_perform()
+			}
+			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
+			owner = obj_boss_cm;
+			image_angle = other.dir2;
+			direction = other.dir2;
+			speed = 6;
+			image_xscale = 1.5;
+			image_yscale = 1.25;
+			}
+		}
+		if(t >= 60 * 30) {
+	wave++;
+	t=0;
+	}
+}
+#endregion
+
+#region Wave 16
+if(wave = 16) {
+	t++;
+		//Wave 16 - Assault 1
+		if(alarm[0] <= 0) {
+		alarm[0] = 5;
+			dir1 += 22;
+			dir2 += 22;
+			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
+			image_angle = other.dir1;	
+			direction = other.dir1;
+			owner = obj_boss_cm;
+			}
+			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
+			image_angle = other.dir2;
+			direction = other.dir2;
+			owner = obj_boss_cm;
+			}
+		}
+		if(t >= 60 * 10) {
+	wave++;
+	t=0;
+	}
 }
 #endregion
