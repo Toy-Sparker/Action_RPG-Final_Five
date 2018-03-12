@@ -9,6 +9,9 @@ var dir = point_direction(0,0,xaxis,yaxis);
 hsp = (lengthdir_x(abs(xaxis * spd), dir));
 vsp = (lengthdir_y(abs(yaxis * spd), dir));
 
+//Player can shoot
+scr_player_step_shootcheck();
+
 //Check for Collisions
 //Horizontal Collision
 if(place_meeting(x+hsp,y,par_collide)) {

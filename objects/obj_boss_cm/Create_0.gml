@@ -1,7 +1,8 @@
 //Stats
 atk = 1.5;
 hp = 10;
-guard = 10;
+guard = 75;
+cheater = 0;
 
 //Wave & Wavetime
 wave = 0;
@@ -11,9 +12,9 @@ t = 0;
 image_speed = 0;
 
 //Setting image numbers as variables for more conventional uses
-expr_normal = 0;
-expr_con = 1;
-expr_ang = 2;
+//expression normal = 0;
+//expression glaring = 1;
+//expression angry = 2;
 
 ///Projectiles
 //Set Target & owner

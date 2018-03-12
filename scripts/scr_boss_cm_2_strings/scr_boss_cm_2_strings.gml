@@ -5,17 +5,12 @@ strings[0] = "If you kill everyone...";
 strings[1] = "What are you going to do with what's\nleft?";
 strings[2] = "Did you ever think about that?!";
 strings[3] = "Did you ever at all think ahead?!";
-strings[4] = "What does it take for people to live\na harmless life, even if it is a game!";
-strings[5] = "You're insufferable and idiotic.\nWhat is making you do this?!";
+strings[4] = "Listening to a game, because you have to...\nWhy not leave us alone instead?";
+strings[5] = "You're insufferable and idiotic.";
 /*strings[6] = "...";
 strings[7] = "How about you confront me with in the\nfull fight, you psychopath.";
 strings[8] = "Expect me later, if you bother of course.";
 */
-
-if(audio_is_playing(obj_control.soundtrack)) {
-if(next = 0) audio_pause_sound(obj_control.soundtrack); else if(next = 1) audio_resume_sound(obj_control.soundtrack);
-//if(next = 6) audio_stop_sound(obj_control.soundtrack);
-}
 
 txt_spd[0] = 2.5;
 txt_spd[1] = 1.5;
@@ -37,3 +32,12 @@ speaker[5] = "Brent";
 speaker[7] = "Brent";
 speaker[8] = "Brent";
 */
+
+switch(next) {
+case 0: obj_boss_cm.image_index = 0; break;
+case 1: obj_boss_cm.image_index = 2; break;
+case 2: obj_boss_cm.image_index = 2; break;
+case 3: obj_boss_cm.image_index = 2; break;
+case 4: obj_boss_cm.image_index = 2; break;
+case 5: obj_boss_cm.image_index = 1; break;
+}

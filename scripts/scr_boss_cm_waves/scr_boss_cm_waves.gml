@@ -25,7 +25,7 @@ if(wave = 0) {
 		}
 	dir1 = dir1 + 2.8;
 	dir2 = dir2 + 2.8;
-	if(t >= 60 * 16) {
+	if(t >= 60 * 17) {
 	wave++;
 	t=0;
 	}
@@ -210,8 +210,8 @@ if(wave = 5) {
 			owner = obj_boss_cm;
 			}
 		}
-	dir1 = dir1 + 2.5;
-	dir2 = dir2 + 2.5;
+	dir1 = dir1 + 2;
+	dir2 = dir2 + 2;
 	if(t >= 60 * 7.5) {
 	wave++;
 	t=0;
@@ -243,9 +243,10 @@ if(wave = 6) {
 			owner = obj_boss_cm;
 			}
 		}
-	dir1 = dir1 - 2.5;
-	dir2 = dir2 - 2.5;
+	dir1 = dir1 - 2;
+	dir2 = dir2 - 2;
 	if(t >= 60 * 7.5) {
+	if(obj_player.hp < 61) obj_player.hp += 40;
 	wave++;
 	t=0;
 	}
@@ -255,12 +256,19 @@ if(wave = 6) {
 #region Wave 7 - Break to Dialogue 1
 if(wave = 7) {
 	if(global.fighting = 1) {
-	obj_control.alarm[10]=1;
 	obj_text.next = 0;
+	
+	//Chance of Easter Egg Dialogue
+	if(Chance(0.1)) {
+	obj_text.string_load = scr_boss_cm_ee1_strings;	
+	} else {
 	obj_text.string_load = scr_boss_cm_1_strings;
+	}
+	
 		with(obj_homingbomb0) {
 		instance_destroy();
 		}
+	obj_control.alarm[10]=1;
 	}
 }
 #endregion
@@ -384,11 +392,10 @@ if(wave = 11) {
 	t++;
 			//Wave 11 - Assault 1
 			if(alarm[0] <= 0) {
-			alarm[0] = 15;
+				alarm[0] = 15;
 				dir1 = 90 - 45;
 				dir2 = 270 - 45;
 				dir3 = point_direction(x,y,obj_player.x,obj_player.y);
-				dir4 = point_direction(x,y,obj_player.x,obj_player.y);
 				with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 				image_angle = other.dir1;	
 				direction = other.dir1;
@@ -407,13 +414,17 @@ if(wave = 11) {
 				speed = 10;
 				owner = obj_boss_cm;
 				}
+			}
+			if(alarm[1] <= 0) {
+				alarm[1] = 30;
+				dir4 = point_direction(x,y,obj_player.x,obj_player.y);
 				with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
 				image_angle = other.dir4;
 				direction = other.dir4;
 				speed = 20;
 				owner = obj_boss_cm;
-				}
-		}
+				}	
+			}
 	if(t >= 60 * 10) {
 	wave++;
 	t=0;
@@ -485,6 +496,7 @@ if(wave = 13) {
 			}
 		}
 	if(t >= 60 * 4) {
+	if(obj_player.hp < 61) obj_player.hp += 40;
 	wave++;
 	t=0;
 	}
@@ -494,12 +506,19 @@ if(wave = 13) {
 #region Wave 14 - Break to Dialogue 2
 if(wave = 14) {
 	if(global.fighting = 1) {
-	obj_control.alarm[10]=1;
 	obj_text.next = 0;
+	
+	//Chance of Easter Egg Dialogue
+	if(Chance(0.3)) {
+	obj_text.string_load = scr_boss_cm_ee2_strings;
+	} else {
 	obj_text.string_load = scr_boss_cm_2_strings;
-		with(obj_homingbomb0) {
+	}
+	
+	with(obj_homingbomb0) {
 		instance_destroy();
 		}
+	obj_control.alarm[10]=1;
 	}
 }
 #endregion
@@ -512,6 +531,8 @@ if(wave = 15) {
 		alarm[0] = 6;
 			dir1 += 11.25;
 			dir2 += 11.25;
+			dir3 += 11.25;
+			dir4 += 11.25;
 			with(instance_create_layer(xx1,yy1,"Projectiles",bullet1)) {
 			owner = obj_boss_cm;
 			image_angle = other.dir1;	
@@ -519,12 +540,27 @@ if(wave = 15) {
 			speed = 6;
 			image_xscale = 1.5;
 			image_yscale = 1.25;
-			event_perform()
 			}
 			with(instance_create_layer(xx2,yy2,"Projectiles",bullet2)) {
 			owner = obj_boss_cm;
 			image_angle = other.dir2;
 			direction = other.dir2;
+			speed = 6;
+			image_xscale = 1.5;
+			image_yscale = 1.25;
+			}
+			with(instance_create_layer(xx3,yy3,"Projectiles",bullet3)) {
+			owner = obj_boss_cm;
+			image_angle = other.dir3;	
+			direction = other.dir3;
+			speed = 6;
+			image_xscale = 1.5;
+			image_yscale = 1.25;
+			}
+			with(instance_create_layer(xx4,yy4,"Projectiles",bullet4)) {
+			owner = obj_boss_cm;
+			image_angle = other.dir4;
+			direction = other.dir4;
 			speed = 6;
 			image_xscale = 1.5;
 			image_yscale = 1.25;

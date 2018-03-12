@@ -4,7 +4,7 @@ strings[0]="'Z key' to scroll through dialogue...";
 strings[1]="Welcome to the screen of help...";
 strings[2]="A.k.a the help screen.";
 strings[3]="I'm gonna be listing things that you'll\nneed to play";
-strings[4]="Arrow keys to move\nM to toggle the music on or off";
+strings[4]="Arrow keys to move\nM to toggle the music on or off\nCtrl to Shoot";
 strings[5]="That's everything... now..."
 strings[6]="Go and be a psychopathetic in an Action Rpg!";
 
@@ -25,5 +25,5 @@ speaker[5]="Shmatt";
 speaker[6]="Shmatt";
 
 if(talking = 0) && (next = next_max) {
-room_goto(rm_boss_cm);	
+room_goto(rm_choose_boss);	
 }
